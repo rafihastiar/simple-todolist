@@ -1,0 +1,277 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(237,242,248);
+}
+
+header {
+    background-color: rgb(180,193,246);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-image: url(https://www.teahub.io/photos/full/117-1170600_blue-mountain-wallpaper-free-wallpaper-downloads-blue-blue.jpg);
+    background-position: center;
+    background-size: cover;
+    border-bottom: 4px solid rgba(0, 61, 107, 0.655);
+}
+header .title {
+    font-family: 'Segoe UI', sans-serif;
+    font-size: 2em;
+    font-weight: bold;
+    letter-spacing: 16px;
+    text-transform: uppercase;
+}
+
+header .title-span {
+    text-shadow: 4px 4px #558ABB;
+}
+
+header .date {
+    font-family: 'Square Peg', cursive;
+    width: 100%;
+    font-size: 1.5em;
+    background-color: rgba(0, 29, 53, 0.1);
+    letter-spacing: 5px;
+}
+
+header .time {
+    /* font-family: 'Viga'; */
+    color: rgba(209, 220, 238, 0.973);
+    font-weight: 500;
+    font-size: 1.2em;
+}
+.done {
+    text-decoration: line-through;
+    transition: 0.4s;
+}
+
+
+
+main .container {
+    width: 85%;
+    background-color: #6d6d6d21;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 20px auto;
+    height: 60vmax;
+    border-radius: 10px;
+}
+
+@media (min-width: 992px) {  
+    main .container {
+        height: 40vmax;
+    }
+    
+}
+main .fa-clipboard {
+    margin-bottom: 20px;
+    font-size: 7em;
+    color: #3131314f;
+    text-shadow: 4px 4px #3d80be37;
+    width: 100%;
+    text-align: center;
+}
+
+@media (min-width: 992px) { 
+    main .fa-clipboard {
+        font-size: 10em;
+    }
+}
+
+main .h2-description {
+    font-family: 'Segoe UI', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin: 5px 0;
+}
+
+@media (min-width: 992px) { 
+    main .h2-description {
+        font-size: 2.5em;
+    }
+}
+
+main .p-description {
+    font-family: 'Segoe UI', sans-serif;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+@media (min-width: 992px) { 
+    main .p-description {
+        font-size: 1.4em;
+    }
+}
+main .todo-form {
+    text-align: center;
+    width: 80%;
+}
+
+@media (min-width: 992px) { 
+    main .todo-form {
+        width: 60%;
+    }
+}
+
+main .js-todo-input {
+    width: 100%;
+    height: 30px;
+    padding: 0 10px;
+    border: 1px solid #558ABB;
+    border-radius: 5px;
+}
+
+
+main .list {
+    width: 80%;
+    margin-bottom: 10px;
+}
+@media (min-width: 992px) { 
+    main .list {
+        width: 60%;
+    }
+}
+
+main .item-list {
+    margin-bottom: 15px;
+    position: relative;
+}
+
+input[type=checkbox] + label {
+    /* display: block; */
+    margin: 0.2em;
+    cursor: pointer;
+    padding: 0.2em;
+  }
+  
+  input[type=checkbox] {
+    display: none;
+  }
+  
+  input[type=checkbox] + label:before {
+    content: "\2714";
+    border: 0.1em solid #000;
+    border-radius: 0.2em;
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    padding-left: 0.2em;
+    padding-bottom: 0.3em;
+    margin-right: 0.2em;
+    vertical-align: bottom;
+    color: transparent;
+    transition: .2s;
+  }
+  
+  input[type=checkbox] + label:active:before {
+    transform: scale(0);
+  }
+  
+  input[type=checkbox]:checked + label:before {
+    background-color: rgb(60, 102, 179);
+    border-color: rgb(60, 102, 179);
+    color: #fff;
+  }
+  
+  input[type=checkbox]:disabled + label:before {
+    transform: scale(1);
+    border-color: #aaa;
+  }
+  
+main .delete-list {
+    border-radius: 50%;
+    position: absolute;
+    left: 300px;
+    top: 10px ;
+    border: none;
+    width: 25px;
+    font-size: 1.2em;
+    cursor: pointer;
+    color: rgba(255, 0, 0, 0.276);
+}
+
+@media (min-width: 992px) { 
+    main .delete-list {
+        left: 400px;
+        font-size: 1.3em;
+    }
+}
+
+main .text-list {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1em;
+    letter-spacing: 2px;
+}
+
+@media (min-width: 992px) { 
+    main .text-list {
+        font-size: 1.3em;
+    }
+}
+
+footer {
+    position: relative;
+    width: 100%;
+    height: 15vh;
+}
+
+footer .wave {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 13vh;
+    background: url(wavebb.png);
+    background-size: 1000px 100px;
+}
+
+footer .wave.wave1 {
+    animation: animate 30s linear infinite;
+    z-index: 1000;
+    opacity: 1;
+    animation-delay: 0s;
+    bottom: 0;
+}
+
+footer .wave.wave2 {
+    animation: animate 15s linear infinite;
+    animation-direction: reverse;
+    z-index: 999;
+    opacity: 0.5;
+    animation-delay: -5s;
+    bottom: 10px;
+}
+
+footer .wave.wave3 {
+    animation: animate 10s linear infinite;
+    z-index: 998;
+    opacity: 0.2;
+    animation-delay: -2s;
+    bottom: 15px;
+}
+
+footer .wave.wave4 {
+    animation: animate 5s linear infinite;
+    animation-direction: reverse;
+    z-index: 997;
+    opacity: 0.7;
+    animation-delay: -2s;
+    bottom: 20px;
+}
+@keyframes animate {
+    0%{
+        background-position-x: 0;
+    }
+    100% {
+        background-position-x: 1000px;
+    } 
+}

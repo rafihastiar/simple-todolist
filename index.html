@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Square+Peg&family=Viga&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Todo List</title>
+</head>
+<body>
+    <header>
+        <div class="title">Your <br>
+            <span class="title-span">Todo List</span>
+        </div>
+        <div class="date">
+            <!-- <span id="day">Day</span>
+            <span id="month">Month</span>
+            <span id="daynumber">00</span>
+            <span id="year">Year</span>
+            <span id="time"></span> -->
+            <span class="day-month"></span>
+            <br>
+            <span class="time"></span>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <div class="description">
+                <i class="fa-regular fa-clipboard"></i>
+                <h2 class="h2-description">Add your first todo</h2>
+                <p class="p-description">What do you want to get done today?</p>
+            </div>
+        <div class="list">
+            <ul class="todo-list">
+            </ul>
+        </div>
+        <form class="todo-form">
+            <input autofocus="" maxlength="20" type="text" aria-label="Enter a new todo item" placeholder="E.g. Build a web app" class="js-todo-input">
+        </form>
+    </div>
+    </main>
+    <footer>
+        <div class="wave wave1"></div>
+        <div class="wave wave2"></div>
+        <div class="wave wave3"></div>
+        <div class="wave wave4"></div>
+    </footer>
+<script src="script.js"></script>
+</body>
+</html>
